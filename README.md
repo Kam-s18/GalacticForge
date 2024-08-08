@@ -15,6 +15,7 @@ The AutoEncoder is used to learn global properties from galaxy images.
 The encoder is a series of convolutional layers that progressively reduces the spatial dimensions from the input (3x448x448). The latent space has a dimension of 16. The decoder is a series of transposed convolutional layers that progressively increase the spatial dimension of the latent space back to the original image dimension. Note that the decoder is irrelevant to the GalacticForge. It only exists to test the performance of the AutoEncoder.
 
 The latent space must be able to capture certain global galaxy properties like shape, colour, size, orientation, etc. However, the latent space need not be physically interpretable. Here is how the reconstruction image of a galaxy changes on changing the latent variable values:
+![output6_deep](https://github.com/user-attachments/assets/43f8eb29-9e5d-44f5-a868-c5f14b84a051)
 
 These latent variables are provided as conditions along with the parameters from the data preperation stage, to the Conditional Normalizing Flow model. 
 
@@ -26,8 +27,3 @@ c) NICE Flow (Implement using Zuko library)
 d) Auto Regressive Flow (Implement using Zuko library)
 
 The results and code of all the above normalizing flows can be found in the repo.
-
-
-
-
-
