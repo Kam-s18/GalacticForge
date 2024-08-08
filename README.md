@@ -36,6 +36,3 @@ The results and code of all the above normalizing flows can be found in the repo
 5) In each of the above model folders, the `Model Checkpoints and Losses` folder contains the weights of the final model after training saved in .PTH file.
 6) The `Main_Workflow_Galactic_Flow_model.ipynb` contains the overall workflow from data cleaning to model training till sampling and inference for a CNF architecture as in [GalacticFlow](https://github.com/luwo9/GalacticFlow)
 7) The `Main_Workflow_custom_model.ipynb` contains the overall workflow from data cleaning to model training till sampling and inference for a CNF architecture defined from the [zuko]([https://github.com/luwo9/GalacticFlow](https://zuko.readthedocs.io/stable/index.html)) library. This can be an AutoRegressive CNF or NICE CNF or SOSPF CNF model.
-
-##How to Use
-
