@@ -21,9 +21,9 @@ These latent variables are provided as conditions along with the parameters from
 
 ### Conditional Normalizing Flows
 Conditional Normalizing Flow is used to learn the distribution of stars in a galaxy, conditioned on the latent variables and parameters from the data preperation stage. Various Conditional Normalizing Flow models have been trained and tested out:
-a) CNF as provided in [GalacticFlow](https://github.com/luwo9/GalacticFlow):
-b) Sum-of-Squares Polynomial Flow (Implement using Zuko library)
-c) NICE Flow (Implement using Zuko library)
-d) Auto Regressive Flow (Implement using Zuko library)
+a) CNF as provided in [GalacticFlow](https://github.com/luwo9/GalacticFlow) <br />
+b) Sum-of-Squares Polynomial Flow (Implement using Zuko library) <br />
+c) NICE Flow (Implement using Zuko library) <br />
+d) Auto Regressive Flow (Implement using Zuko library) <br />
 
 The results and code of all the above normalizing flows can be found in the repo.
