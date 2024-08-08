@@ -28,9 +28,11 @@ d) Auto Regressive Flow (Implement using Zuko library) <br />
 
 The results and code of all the above normalizing flows can be found in the repo.
 
-## How To Use?
+## Repo Structure and File Information
 1) The `AutoEncoder` folder contains the notebook with the code for the AE Autoencoder, latent space for each galaxy produced, weights of the final AutoEncoder after training saved in a .PTH file and some images representing how the AutoEncoder performs.
 2) The folders `Autoregressive_flow_model`, `Main_flow_model`, `Main_flow_model_hypertuned`, `NICE_flow_model` and `SOSPF_flow_model` contains the implementation of various normalizing flows, organized into three sub-folders - `Codes`, `Model Checkpoint and Losses` and `Outputs`.
 3) In each of the above models folders, the `Codes` sub-folder contains - `externalize.py`, `flowcode.py`, `processing.py`, and `res_flow_vis.py` which are dependencies required for GalacticForge and are adapted from [GalacticFlow](https://github.com/luwo9/GalacticFlow), with a few changes made. `Final_AE.py` is the file that contains the code for the AutoEncoder. `workflow.py` contains the code that binds all other dependecies and implements the following: Cleaning of data, Optionally train the AE, Choose subsets of data, Process data, define model architecture, train the model and save checkpoints of the model during training.
 4) In each of the above model folders, the `Outputs` sub-folder contains the output screenshots for the model (indicating its performance).
 5) In each of the above model folders, the `Model Checkpoints and Losses` folder contains the weights of the final model after training saved in .PTH file.
+6) The `Main_Workflow_Galactic_Flow_model.ipynb` contains the overall workflow from data cleaning to model training till sampling and inference for a CNF architecture as in [GalacticFlow](https://github.com/luwo9/GalacticFlow)
+7) The `Main_Workflow_custom_model.ipynb` contains the overall workflow from data cleaning to model training till sampling and inference for a CNF architecture defined from the [zuko]([https://github.com/luwo9/GalacticFlow](https://zuko.readthedocs.io/stable/index.html)) library. This can be an AutoRegressive CNF or NICE CNF or SOSPF CNF model. 
