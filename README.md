@@ -20,7 +20,7 @@ The latent space must be able to capture certain global galaxy properties like s
 These latent variables are provided as conditions along with the parameters from the data preperation stage, to the Conditional Normalizing Flow model. 
 
 ### Conditional Normalizing Flows
-Conditional Normalizing Flow is used to learn the distribution of stars in a galaxy, conditioned on the latent variables and parameters from the data preperation stage. Various Conditional Normalizing Flow models have been trained and tested out:
+Conditional Normalizing Flow is used to learn the distribution of stars in a galaxy, conditioned on the latent variables and parameters from the data preperation stage. Various Conditional Normalizing Flow models have been trained and tested out: <br />
 a) CNF as provided in [GalacticFlow](https://github.com/luwo9/GalacticFlow) <br />
 b) Sum-of-Squares Polynomial Flow (Implement using Zuko library) <br />
 c) NICE Flow (Implement using Zuko library) <br />
