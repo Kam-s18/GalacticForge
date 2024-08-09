@@ -36,3 +36,18 @@ The results and code of all the above normalizing flows can be found in the repo
 5) In each of the above model folders, the `Model Checkpoints and Losses` folder contains the weights of the final model after training saved in .PTH file.
 6) The `Main_Workflow_Galactic_Flow_model.ipynb` contains the overall workflow from data cleaning to model training till sampling and inference for a CNF architecture as in [GalacticFlow](https://github.com/luwo9/GalacticFlow)
 7) The `Main_Workflow_custom_model.ipynb` contains the overall workflow from data cleaning to model training till sampling and inference for a CNF architecture defined from the [zuko]([https://github.com/luwo9/GalacticFlow](https://zuko.readthedocs.io/stable/index.html)) library. This can be an AutoRegressive CNF or NICE CNF or SOSPF CNF model.
+
+## How to Use?
+1) The notebooks `Main_Workflow_Galactic_Flow_model.ipynb` and `Main_Workflow_custom_model.ipynb` can be run entirely and that would Clean the Data, Train Autoencoder, Train your conditional normalizing flow and perform sampling and inference.
+2) However, the <> conains the latent space for all the galaxy images considered, thereby eliminating the need to train the autoencoder from scratch unless required.
+3) Training of conditional normalizing flow take >24 hours and hence it is recommended to run the `workflow.py` script on GPU rather than running it in the notebook. This would create a folder at specified location with checkpoints and losses during training.
+4) One can also load the checkpoint (provided in the `Model Checkpoints and Losses` folder) in order to bypass the training and directly proceed to inference.
+5) The section where inference and sampling starts is indicated in the notebooks `Main_Workflow_Galactic_Flow_model.ipynb` and `Main_Workflow_custom_model.ipynb`. The entire notebook would still have to be run (skip any training part and instead load checkpoints and latent variables) for sampling and inference.
+
+## Some Figures
+1) Performance of CNF Model as provided in [GalacticFlow](https://github.com/luwo9/GalacticFlow) with hyperparameter tuning:
+   ![output1](https://github.com/user-attachments/assets/1b595b0f-baf9-49df-a6db-74742ce7f68c)
+
+2) Performance of SOSPF Model:
+   ![outputa4](https://github.com/user-attachments/assets/8173ec6b-6bcc-447c-82b3-b9ae99b55a3c)
+
